@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body><div>
+    <div class="sidenav">
+       <h2>Welcome</h2>
+       <h4>You are 30 seconds away<br>
+           from earning your own<br>
+           money!
+       </h4>
+       <button class="logBtn"><a href="#" style="text-decoration: none">Login</a></button>
+        <div style="margin-right: 90px;">
+           <div style="margin-top: 20px;">
+            <div class="main">
+                <div style="margin-right: 200px;">
+
+    <h1>Apply as a Employee</h1>
+    <button type="Employee" class="btn btn-primary">Employee </button><br><br>
+    <!--First Name-->
+    <div class="form-group">
+        <label for="formGroupExampleInput"><span style="color: red; font-size: larger;">*</span></label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="FirstName" required maxlength="15" minlength="5" onChange="namev()" required>
+      </div>
+
+
+    
+
+
+      <script>
+        function namev(){
+          let x=document.getElementById("formGroupExampleInput").value;
+          let pattern = /^([a-zA-Z])+$/; 
+            let check=pattern.test(e);
+        if(x.length>4 && x.length<16){
+          document.getElementById("formGroupExampleInput").style.border="3px solid green"
+        }
+        else{
+          document.getElementById("formGroupExampleInput").style.border="3px solid red"
+        }
+        }
+        </script>
+
+       <!--Last Name-->
+        <div class="form-group">
+        <label for="formGroupExampleInput"><span style="color: red; font-size: larger;">*</span></label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="LasttName" required maxlength="15" minlength="5" onChange="namev()" required>
+      </div>
+
+      <script>
+   function namev(){
+          let x=document.getElementById("formGroupExampleInput").value;
+          let pattern = /^([a-zA-Z])+$/; 
+            let check=pattern.test(e);
+        if(x.length>4 && x.length<16){
+          document.getElementById("formGroupExampleInput").style.border="3px solid green"
+        }
+        else{
+          document.getElementById("formGroupExampleInput").style.border="3px solid red"
+        }
+        }
+       </script>
+        <!--Password-->
+        <div class="form-group">
+            <label for="formGroupExampleInput"><span style="color: red; font-size: larger;">*</span></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="password" required maxlength="15" minlength="5" onChange="passv()" required>
+          </div>
+    
+          <script>
+       function passv(){
+              let x=document.getElementById("formGroupExampleInput").value;
+              let pattern = /^([a-zA-Z0-9])+$/; 
+                let check=pattern.test(e);
+            if(x.length>4 && x.length<16){
+              document.getElementById("formGroupExampleInput").style.border="3px solid green"
+            }
+            else{
+              document.getElementById("formGroupExampleInput").style.border="3px solid red"
+            }
+            }
+           </script>
+           <div class="form-group">
+            <label for="formGroupExampleInput"><span style="color: red; font-size: larger;">*</span></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ConfirmPassword" required maxlength="15" minlength="5" onChange="conpassv()" required>
+          </div>
+    
+          <script>
+       function conpassv(){
+              let x=document.getElementById("formGroupExampleInput").value;
+              let pattern = /^([a-zA-Z0-9])+$/; 
+                let check=pattern.test(e);
+            if(x.length>4 && x.length<16){
+              document.getElementById("formGroupExampleInput").style.border="3px solid green"
+            }
+            else{
+              document.getElementById("formGroupExampleInput").style.border="3px solid red"
+            }
+            }
+           </script>
+
+<div class="form-group">        Gender <br> Male<input name="m" type="radio">Female<input name="m" type="radio"><br><br>
+    
+    
+</div> 
+       <br>
+       <div style="margin-right: 210px;">
+        
+       <div class="form-group">
+        <label for="exampleInputEmail1"><span style="color: red; font-size: larger;">*</span></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email" onChange="emailv()" required>
+        <p id="emailHelp" class="form-text "></p>
+      </div>
+
+      <script>
+        function emailv(){
+        let e=document.getElementById("exampleInputEmail1").value;
+        let pattern = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+        let check=pattern.test(e);
+        console.log(typeof check,check);
+        if(check==false){
+          document.getElementById("exampleInputEmail1").style.border="3px solid red"
+          document.getElementById("emailHelp").style.color="red"
+          document.getElementById("emailHelp").innerHTML="Enter email address properly"
+        }
+        else{
+          document.getElementById("exampleInputEmail1").style.border="3px solid green"
+          document.getElementById("emailHelp").style.color="green"
+          document.getElementById("emailHelp").innerHTML="Email valid"
+        }
+         }
+      </script>
+
+<div class="form-group"><span style="color: red; font-size: larger;">*</span>
+  
+    <input type="tel" pattern=".{10}" class="form-control" id="validationCustom08" placeholder="Your Phone" oninput="check(this)" onChange="numv()" required>
+
+  </div>
+
+<script>
+function numv() {
+let n=document.getElementById("validationCustom08").value;
+if(n.length==10){
+document.getElementById("validationCustom08").style.border="3px solid green"
+}
+else{
+document.getElementById("validationCustom08").style.border="3px solid red"
+}
+
+}
+</script>
+<div class="form-group"> 
+    <form name="form1" id="form1" action="/action_page.php" >
+     <select name="subject" id="subject" style="padding: 10px; border-radius: 5px;font-size: large; font-weight: 500; border: 0; ">
+       <option value="" selected="selected" >Please select your sequrity question</option>
+     </select>
+     
+     <div class="form-group">
+        <label for="formGroupExampleInput"><span style="color: red; font-size: larger;">*</span></label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your answer" required maxlength="15" minlength="5" onChange="namev()" required>
+      </div>
+
+      <script>
+   function namev(){
+          let x=document.getElementById("formGroupExampleInput").value;
+          let pattern = /^([a-zA-Z])+$/; 
+            let check=pattern.test(e);
+        if(x.length>4 && x.length<16){
+          document.getElementById("formGroupExampleInput").style.border="3px solid green"
+        }
+        else{
+          document.getElementById("formGroupExampleInput").style.border="3px solid red"
+        }
+        }
+       </script>
+
+<button type="submit" class="btn btn-primary">Register</button><br><br>
+</div>
+      </div>
+
+      </script>
+</body>
+</html>
